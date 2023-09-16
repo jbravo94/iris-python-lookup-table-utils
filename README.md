@@ -5,6 +5,7 @@
 The IRIS Python Lookup Table Utils module provides a simple API to interact with the lookup tables in Intersystems IRIS from python.
 Furthermore it offers the capability to import Excel sheets which is useful for project implementation and migration.
 
+Click on the screenshot below to view the demo video:
 [![Screenshot](Screenshot.png?raw=true "Screenshot")](https://youtu.be/-oyRiVOLU2c "IRIS Python Lookup Table Utils")
 
 ## Installation
@@ -18,22 +19,25 @@ Furthermore it offers the capability to import Excel sheets which is useful for 
 7. Import module `from pylotaut import pylotaut`
 8. Run commands `pylotaut.<FUNCTION>` documented in next chapter
 
-## API functions  
+## API functions
+
+All API functions accept or return python objects e.g. strings, dictionaries or tuples. 
+
 ### Get actions
-`get_value(table, key)`
-`get_tables()`
-`load_xlsx(path)`
-`load_table(table_name)`
+* `get_value(table, key)`
+* `get_tables()`
+* `load_xlsx(path)`
+* `load_table(table_name)`
 
 ### Set actions
-`set_value(table, key, value)`
-`create_lookuptable(table_name, items)`
+* `set_value(table, key, value)`
+* `create_lookuptable(table_name, items)`
 
 ### Delete actions
-`delete_key(table_name, key)`
-`delete_table(table_name)`
+* `delete_key(table_name, key)`
+* `delete_table(table_name)`
 
 ### Print actions
-`list_tables()`
-`print_value(table, key)`
-`print_table(table_name)`
+* `list_tables()`
+* `print_value(table, key)`
+* `print_table(table_name)`
