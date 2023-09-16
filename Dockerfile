@@ -1,4 +1,4 @@
-ARG IMAGE=intersystemsdc/iris-community:latest
+ARG IMAGE=intersystemsdc/iris-community:2023.2.0.227.0-zpm
 FROM $IMAGE
 
 WORKDIR /irisdev/app
