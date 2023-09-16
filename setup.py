@@ -9,6 +9,6 @@ setup(
     url='https://heinzl.dev/',
     packages=find_packages(include=['pylotaut', 'pylotaut.*']),
     install_requires=[
-        'openpyxl==3.1.2'
+        'openpyxl'
     ]
 )

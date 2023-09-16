@@ -15,4 +15,8 @@ ENV PATH "/home/irisowner/.local/bin:/usr/irissys/bin:/usr/local/sbin:/usr/local
 
 COPY . .
 
+USER root
+RUN pip3 install -r requirements.txt
 RUN pip3 install -e .
+
+USER irisowner

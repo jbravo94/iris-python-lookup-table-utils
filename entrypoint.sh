@@ -7,7 +7,4 @@ set -m
 # init iop
 iop --init
 
-# start production
-iop --start &
-
 fg %1

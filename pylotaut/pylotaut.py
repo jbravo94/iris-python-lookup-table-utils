@@ -84,6 +84,9 @@ def load_xlsx(path):
         if (i == 1 and ("key" in str(key).lower() or "value" in str(value).lower())):
             continue
 
+        if(key is None):
+            continue
+
         items[key] = value
     
     return (title, items)
